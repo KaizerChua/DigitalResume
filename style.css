@@ -98,3 +98,94 @@ button {
 button:hover {
     background: #2a4c44;
 }
+
+/* Print-specific styles */
+@media print {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #000 !important;
+    }
+
+    .resume-container {
+        box-shadow: none !important;
+        page-break-inside: avoid !important;
+        display: flex !important;
+        width: 100% !important;
+        min-height: 100% !important;
+    }
+
+    .left-column {
+        width: 30% !important;
+        background: #1a3c34 !important;
+        color: #fff !important;
+        padding: 20px !important;
+        min-height: 100% !important;
+        float: left !important;
+    }
+
+    .right-column {
+        width: 70% !important;
+        padding: 20px !important;
+        color: #000 !important;
+        float: right !important;
+        clear: none !important;
+    }
+
+    .skills .skill-bar {
+        margin: 10px 0 !important;
+    }
+
+    .skills .skill-level {
+        height: 10px !important;
+        background: #fff !important;
+        /* White for contrast on green */
+        border: 2px solid #000 !important;
+        /* Thicker border for visibility */
+        border-radius: 5px !important;
+    }
+
+    /* Hide the print button */
+    button {
+        display: none !important;
+    }
+
+    /* Aggressive header/footer suppression */
+    @page {
+        margin: 0 !important;
+        padding: 0 !important;
+        size: auto !important;
+
+        @top-left {
+            content: "" !important;
+        }
+
+        @top-center {
+            content: "" !important;
+        }
+
+        @top-right {
+            content: "" !important;
+        }
+
+        @bottom-left {
+            content: "" !important;
+        }
+
+        @bottom-center {
+            content: "" !important;
+        }
+
+        @bottom-right {
+            content: "" !important;
+        }
+    }
+
+    @page :footer {
+        display: none !important;
+    }
+
+    @page :header {
+        display: none !important;
+    }
+}
