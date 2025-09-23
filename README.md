@@ -4,7 +4,7 @@ This is my online resume and portfolio website. It shows my IT skills as I try t
 
 
 What’s Inside
--------------------------------------------------------------------------------
+-
 Main Website (index.html):
 A simple page with "About Me," "Projects," "Skills," and "Contact" sections.
 Smooth scrolling and a test contact form.
@@ -14,7 +14,6 @@ Makes the site look clean with a green and white design.
 
 Photo:
 My profile picture (myself.png) is included using a link from GitHub.
--------------------------------------------------------------------------------
 
 
 How to Set It Up
@@ -35,9 +34,11 @@ Copy the files:
 -git clone https://github.com/kaizerchua/digitalresume.git
 
 -Open the folder in Visual Studio Code.
+
 -Make sure the myself.png link works.
 
 Run It:
+
 -Open index.html in a web browser.
 
 Share It:
